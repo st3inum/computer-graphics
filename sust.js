@@ -1,6 +1,6 @@
 // config
-var height = 1000, width = 1000;
-canvas = document.getElementById('canvas');
+var height = 500, width = 1200;
+canvas = document.getElementById('canvas2');
 canvas.height = height;
 canvas.width = width;
 context = canvas.getContext('2d', {alpha: false, willReadFrequently: true}); // we removed alpha layert
@@ -90,7 +90,7 @@ function BresenhamLine(x0, y0, x1, y1, color = 'black', size = 1, gap = 10000000
 }
 
 function sust() {
-	var sx = 100, sy = 200, d = 60;
+	var sx = 500, sy = 300, d = 80;
 	BresenhamLine(sx, sy, sx + d, sy - d);
 	BresenhamLine(sx, sy, sx + d, sy, 'black', 1, 5);
 	BresenhamLine(sx, sy + d, sx + d, sy);
@@ -105,7 +105,7 @@ function sust() {
 	BresenhamLine(sx + d * 4, sy - d, sx + d * 4, sy);
 	BresenhamLine(sx + d * 5, sy, sx + d * 5, sy + d);
 
-	BresenhamLine(sx + d * 6, sy - d, sx + d * 7, sy - d, 'black', 1, 10);
+	BresenhamLine(sx + d * 6, sy - d, sx + d * 7, sy - d, 'black', 1, 3);
 	BresenhamLine(sx + d * 6.5, sy - d, sx + d * 6.5, sy + d, 'black', 1, 5);
 
 }

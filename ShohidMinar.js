@@ -1,5 +1,5 @@
 // config
-var height = 2000, width = 2000;
+var height = 700, width = 1200;
 canvas = document.getElementById('canvas');
 canvas.height = height;
 canvas.width = width;
